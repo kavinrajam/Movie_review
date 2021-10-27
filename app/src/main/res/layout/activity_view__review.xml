@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@drawable/mv"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    tools:context=".View_Review">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="491dp"
+        android:layout_margin="3dp"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="50dp"
+            android:text="View Details"
+            android:textAlignment="center"
+            android:textColor="#882626"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Mname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:paddingTop="20dp"
+            android:text="Movie Name"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <ImageView
+                android:id="@+id/Poster"
+                android:layout_width="176dp"
+                android:layout_height="169dp"
+                android:layout_below="@id/BSelectImage"
+                android:layout_marginEnd="16dp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/dirname"
+                        android:layout_width="202dp"
+                        android:layout_height="54dp"
+                        android:gravity="start"
+                        android:text="Director :"
+                        android:textAlignment="viewStart"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/actors"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp"
+                        android:gravity="start"
+                        android:text="Actor :"
+                        android:textAlignment="viewStart"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/rating"
+                        android:layout_width="176dp"
+                        android:layout_height="82dp"
+                        android:gravity="start"
+                        android:text="Rating :"
+                        android:textAlignment="viewStart"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+                </TableRow>
+
+                <TableRow>
+
+                </TableRow>
+            </TableLayout>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:text="Description :"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/fed"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:gravity="start"
+            android:text="Feedback :"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Go Back" />
+</LinearLayout>

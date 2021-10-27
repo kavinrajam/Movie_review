@@ -1,0 +1,32 @@
+package com.example.review;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+
+import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
+public class Status extends AppCompatActivity {
+    private ArrayList<ImageModel> courseModalArrayList;
+    private DBManager dbHandler;
+    private CourseRVAdapter courseRVAdapter;
+    private RecyclerView coursesRV;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_status);
+        courseModalArrayList = new ArrayList<>();
+        dbHandler = new DBManager(Status.this);
+        courseModalArrayList = dbHandler.readCourses();
+        courseRVAdapter = new CourseRVAdapter(courseModalArrayList, Status.this);
+        coursesRV = findViewById(R.id.idRVCourses);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(Status.this, RecyclerView.VERTICAL, false);
+        coursesRV.setLayoutManager(linearLayoutManager);
+        coursesRV.setAdapter(courseRVAdapter);
+    }
+}

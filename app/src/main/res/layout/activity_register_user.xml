@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    tools:context=".Register_user">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Register your Details"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/nameU"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="25dp"
+        android:hint="Name"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"/>
+
+    <EditText
+        android:id="@+id/emailU"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/nameU"
+        android:layout_marginTop="25dp"
+        android:hint="Email"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/passwordU"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/emailU"
+        android:layout_marginTop="25dp"
+        android:hint="Password"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/mobile"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/passwordU"
+        android:layout_marginTop="25dp"
+        android:hint="Mobile"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/mobile"
+        android:layout_marginTop="25dp"
+        android:hint="Age"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="23dp"
+        android:background="@android:color/transparent"
+        android:onClick="onClickR"
+        android:text="Existing User?"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="358dp"
+        android:layout_height="71dp"
+        android:layout_below="@id/age"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="75dp"
+        android:background="@android:color/holo_orange_dark"
+        android:onClick="onClickRE"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+
+
+</RelativeLayout>
